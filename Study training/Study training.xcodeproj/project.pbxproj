@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		5539A4071D3183370003F1DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5539A4061D3183370003F1DA /* main.m */; };
 		5539A40A1D3183370003F1DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5539A4091D3183370003F1DA /* AppDelegate.m */; };
-		5539A4121D3183370003F1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5539A4111D3183370003F1DA /* Assets.xcassets */; };
-		5539A4151D3183370003F1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5539A4131D3183370003F1DA /* LaunchScreen.storyboard */; };
-		5539A41F1D3187570003F1DA /* SAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5539A41D1D3187570003F1DA /* SAPViewController.m */; };
-		5539A4201D3187570003F1DA /* SAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5539A41E1D3187570003F1DA /* SAPViewController.xib */; };
+		55FC41801D59B3BF0032EE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FC417C1D59B3BF0032EE67 /* Assets.xcassets */; };
+		55FC41811D59B3BF0032EE67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FC417E1D59B3BF0032EE67 /* LaunchScreen.storyboard */; };
+		55FC418C1D59B51A0032EE67 /* UIWindow+SAPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC418B1D59B51A0032EE67 /* UIWindow+SAPExtensions.m */; };
+		55FC41921D59B5A20032EE67 /* SAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC41901D59B5A20032EE67 /* SAPViewController.m */; };
+		55FC41931D59B5A20032EE67 /* SAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FC41911D59B5A20032EE67 /* SAPViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		5539A4061D3183370003F1DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5539A4081D3183370003F1DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5539A4091D3183370003F1DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5539A4111D3183370003F1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5539A4141D3183370003F1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5539A4161D3183370003F1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5539A41C1D3187570003F1DA /* SAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewController.h; sourceTree = "<group>"; };
-		5539A41D1D3187570003F1DA /* SAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewController.m; sourceTree = "<group>"; };
-		5539A41E1D3187570003F1DA /* SAPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPViewController.xib; sourceTree = "<group>"; };
+		55FC417C1D59B3BF0032EE67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55FC417F1D59B3BF0032EE67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55FC418A1D59B51A0032EE67 /* UIWindow+SAPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+SAPExtensions.h"; sourceTree = "<group>"; };
+		55FC418B1D59B51A0032EE67 /* UIWindow+SAPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+SAPExtensions.m"; sourceTree = "<group>"; };
+		55FC418F1D59B5A20032EE67 /* SAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewController.h; sourceTree = "<group>"; };
+		55FC41901D59B5A20032EE67 /* SAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewController.m; sourceTree = "<group>"; };
+		55FC41911D59B5A20032EE67 /* SAPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,8 @@
 			isa = PBXGroup;
 			children = (
 				5539A4041D3183370003F1DA /* Study training */,
+				55FC417B1D59B33E0032EE67 /* Resources */,
+				55FC417A1D59B26F0032EE67 /* Source */,
 				5539A4031D3183370003F1DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,25 +63,81 @@
 		5539A4041D3183370003F1DA /* Study training */ = {
 			isa = PBXGroup;
 			children = (
+				5539A4061D3183370003F1DA /* main.m */,
 				5539A4081D3183370003F1DA /* AppDelegate.h */,
 				5539A4091D3183370003F1DA /* AppDelegate.m */,
-				5539A4111D3183370003F1DA /* Assets.xcassets */,
-				5539A4131D3183370003F1DA /* LaunchScreen.storyboard */,
 				5539A4161D3183370003F1DA /* Info.plist */,
-				5539A4051D3183370003F1DA /* Supporting Files */,
-				5539A41C1D3187570003F1DA /* SAPViewController.h */,
-				5539A41D1D3187570003F1DA /* SAPViewController.m */,
-				5539A41E1D3187570003F1DA /* SAPViewController.xib */,
 			);
 			path = "Study training";
 			sourceTree = "<group>";
 		};
-		5539A4051D3183370003F1DA /* Supporting Files */ = {
+		55FC417A1D59B26F0032EE67 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5539A4061D3183370003F1DA /* main.m */,
+				55FC418D1D59B5A20032EE67 /* UI */,
+				55FC41871D59B51A0032EE67 /* Library */,
 			);
-			name = "Supporting Files";
+			path = Source;
+			sourceTree = "<group>";
+		};
+		55FC417B1D59B33E0032EE67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55FC417C1D59B3BF0032EE67 /* Assets.xcassets */,
+				55FC417D1D59B3BF0032EE67 /* Base.lproj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55FC417D1D59B3BF0032EE67 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				55FC417E1D59B3BF0032EE67 /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		55FC41871D59B51A0032EE67 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				55FC41881D59B51A0032EE67 /* Categories */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		55FC41881D59B51A0032EE67 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				55FC41891D59B51A0032EE67 /* UIWindow */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		55FC41891D59B51A0032EE67 /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				55FC418A1D59B51A0032EE67 /* UIWindow+SAPExtensions.h */,
+				55FC418B1D59B51A0032EE67 /* UIWindow+SAPExtensions.m */,
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		55FC418D1D59B5A20032EE67 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				55FC418E1D59B5A20032EE67 /* SAPViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		55FC418E1D59B5A20032EE67 /* SAPViewController */ = {
+			isa = PBXGroup;
+			children = (
+				55FC418F1D59B5A20032EE67 /* SAPViewController.h */,
+				55FC41901D59B5A20032EE67 /* SAPViewController.m */,
+				55FC41911D59B5A20032EE67 /* SAPViewController.xib */,
+			);
+			path = SAPViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5539A4151D3183370003F1DA /* LaunchScreen.storyboard in Resources */,
-				5539A4121D3183370003F1DA /* Assets.xcassets in Resources */,
-				5539A4201D3187570003F1DA /* SAPViewController.xib in Resources */,
+				55FC41811D59B3BF0032EE67 /* LaunchScreen.storyboard in Resources */,
+				55FC41801D59B3BF0032EE67 /* Assets.xcassets in Resources */,
+				55FC41931D59B5A20032EE67 /* SAPViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FC418C1D59B51A0032EE67 /* UIWindow+SAPExtensions.m in Sources */,
+				55FC41921D59B5A20032EE67 /* SAPViewController.m in Sources */,
 				5539A40A1D3183370003F1DA /* AppDelegate.m in Sources */,
-				5539A41F1D3187570003F1DA /* SAPViewController.m in Sources */,
 				5539A4071D3183370003F1DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,10 +220,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5539A4131D3183370003F1DA /* LaunchScreen.storyboard */ = {
+		55FC417E1D59B3BF0032EE67 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5539A4141D3183370003F1DA /* Base */,
+				55FC417F1D59B3BF0032EE67 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -292,6 +354,7 @@
 				5539A41B1D3183370003F1DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
