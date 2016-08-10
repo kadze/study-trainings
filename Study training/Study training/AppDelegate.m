@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "SAPViewController.h"
+#import "SAPCollectionViewController.h"
 
 #import "UIWindow+SAPExtensions.h"
 
@@ -22,15 +22,14 @@
     UIWindow *window = [UIWindow window];
     self.window = window;
     
-    self.themeColor = [UIColor colorWithRed:0.01 green:0.41 blue:0.22 alpha:1.0];
+    UIColor *themeColor = [UIColor colorWithRed:0.01 green:0.41 blue:0.22 alpha:1.0];
+    self.themeColor = themeColor;
+    window.tintColor = themeColor;
     
-    SAPViewController *controller = [SAPViewController new];
-    
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-//    
-//    window.rootViewController = navigationController;
-    
-    window.rootViewController = controller;
+    SAPCollectionViewController *controller = [SAPCollectionViewController new];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+
+    window.rootViewController = navigationController;
     [window makeKeyAndVisible];
     
     return YES;

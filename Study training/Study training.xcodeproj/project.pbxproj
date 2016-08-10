@@ -12,8 +12,8 @@
 		55FC41801D59B3BF0032EE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FC417C1D59B3BF0032EE67 /* Assets.xcassets */; };
 		55FC41811D59B3BF0032EE67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FC417E1D59B3BF0032EE67 /* LaunchScreen.storyboard */; };
 		55FC418C1D59B51A0032EE67 /* UIWindow+SAPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC418B1D59B51A0032EE67 /* UIWindow+SAPExtensions.m */; };
-		55FC41921D59B5A20032EE67 /* SAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC41901D59B5A20032EE67 /* SAPViewController.m */; };
-		55FC41931D59B5A20032EE67 /* SAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FC41911D59B5A20032EE67 /* SAPViewController.xib */; };
+		55FC41921D59B5A20032EE67 /* SAPFlickrPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC41901D59B5A20032EE67 /* SAPFlickrPhotosViewController.m */; };
+		55FC41931D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FC41911D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +26,9 @@
 		55FC417F1D59B3BF0032EE67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55FC418A1D59B51A0032EE67 /* UIWindow+SAPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+SAPExtensions.h"; sourceTree = "<group>"; };
 		55FC418B1D59B51A0032EE67 /* UIWindow+SAPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+SAPExtensions.m"; sourceTree = "<group>"; };
-		55FC418F1D59B5A20032EE67 /* SAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewController.h; sourceTree = "<group>"; };
-		55FC41901D59B5A20032EE67 /* SAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewController.m; sourceTree = "<group>"; };
-		55FC41911D59B5A20032EE67 /* SAPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPViewController.xib; sourceTree = "<group>"; };
+		55FC418F1D59B5A20032EE67 /* SAPFlickrPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPFlickrPhotosViewController.h; sourceTree = "<group>"; };
+		55FC41901D59B5A20032EE67 /* SAPFlickrPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPFlickrPhotosViewController.m; sourceTree = "<group>"; };
+		55FC41911D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPFlickrPhotosViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,9 +133,9 @@
 		55FC418E1D59B5A20032EE67 /* SAPViewController */ = {
 			isa = PBXGroup;
 			children = (
-				55FC418F1D59B5A20032EE67 /* SAPViewController.h */,
-				55FC41901D59B5A20032EE67 /* SAPViewController.m */,
-				55FC41911D59B5A20032EE67 /* SAPViewController.xib */,
+				55FC418F1D59B5A20032EE67 /* SAPFlickrPhotosViewController.h */,
+				55FC41901D59B5A20032EE67 /* SAPFlickrPhotosViewController.m */,
+				55FC41911D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib */,
 			);
 			path = SAPViewController;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 			files = (
 				55FC41811D59B3BF0032EE67 /* LaunchScreen.storyboard in Resources */,
 				55FC41801D59B3BF0032EE67 /* Assets.xcassets in Resources */,
-				55FC41931D59B5A20032EE67 /* SAPViewController.xib in Resources */,
+				55FC41931D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FC418C1D59B51A0032EE67 /* UIWindow+SAPExtensions.m in Sources */,
-				55FC41921D59B5A20032EE67 /* SAPViewController.m in Sources */,
+				55FC41921D59B5A20032EE67 /* SAPFlickrPhotosViewController.m in Sources */,
 				5539A40A1D3183370003F1DA /* AppDelegate.m in Sources */,
 				5539A4071D3183370003F1DA /* main.m in Sources */,
 			);
