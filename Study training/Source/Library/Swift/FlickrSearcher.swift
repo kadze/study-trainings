@@ -36,7 +36,7 @@ class FlickrPhoto : Equatable {
   }
   
   func loadLargeImage(completion: (flickrPhoto:FlickrPhoto, error: NSError?) -> Void) {
-    let loadURL = flickrImageURL(size: "b")
+    let loadURL = flickrImageURL("b")
     let loadRequest = NSURLRequest(URL:loadURL)
     NSURLConnection.sendAsynchronousRequest(loadRequest,
       queue: NSOperationQueue.mainQueue()) {
@@ -48,7 +48,7 @@ class FlickrPhoto : Equatable {
         }
         
         if data != nil {
-          let returnedImage = UIImage(data: data)
+          let returnedImage = UIImage(data: data!)
           self.largeImage = returnedImage
           completion(flickrPhoto: self, error: nil)
           return
