@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5539A4071D3183370003F1DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5539A4061D3183370003F1DA /* main.m */; };
 		5539A40A1D3183370003F1DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5539A4091D3183370003F1DA /* AppDelegate.m */; };
+		55A126891D5C5610007B3F6E /* FlickrSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A126881D5C5610007B3F6E /* FlickrSearcher.swift */; };
 		55FC41801D59B3BF0032EE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FC417C1D59B3BF0032EE67 /* Assets.xcassets */; };
 		55FC41811D59B3BF0032EE67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FC417E1D59B3BF0032EE67 /* LaunchScreen.storyboard */; };
 		55FC418C1D59B51A0032EE67 /* UIWindow+SAPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC418B1D59B51A0032EE67 /* UIWindow+SAPExtensions.m */; };
@@ -22,6 +23,7 @@
 		5539A4081D3183370003F1DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5539A4091D3183370003F1DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5539A4161D3183370003F1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55A126881D5C5610007B3F6E /* FlickrSearcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearcher.swift; sourceTree = "<group>"; };
 		55FC417C1D59B3BF0032EE67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55FC417F1D59B3BF0032EE67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55FC418A1D59B51A0032EE67 /* UIWindow+SAPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+SAPExtensions.h"; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 			path = "Study training";
 			sourceTree = "<group>";
 		};
+		55A126871D5C5610007B3F6E /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				55A126881D5C5610007B3F6E /* FlickrSearcher.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		55FC417A1D59B26F0032EE67 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		55FC41871D59B51A0032EE67 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				55A126871D5C5610007B3F6E /* Swift */,
 				55FC41881D59B51A0032EE67 /* Categories */,
 			);
 			path = Library;
@@ -211,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FC418C1D59B51A0032EE67 /* UIWindow+SAPExtensions.m in Sources */,
+				55A126891D5C5610007B3F6E /* FlickrSearcher.swift in Sources */,
 				55FC41921D59B5A20032EE67 /* SAPFlickrPhotosViewController.m in Sources */,
 				5539A40A1D3183370003F1DA /* AppDelegate.m in Sources */,
 				5539A4071D3183370003F1DA /* main.m in Sources */,
