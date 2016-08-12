@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5501BABD1D5E294C00AFBBE7 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 5501BABC1D5E294C00AFBBE7 /* Flickr.m */; };
 		5539A4071D3183370003F1DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5539A4061D3183370003F1DA /* main.m */; };
 		5539A40A1D3183370003F1DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5539A4091D3183370003F1DA /* AppDelegate.m */; };
 		55A126891D5C5610007B3F6E /* FlickrSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A126881D5C5610007B3F6E /* FlickrSearcher.swift */; };
@@ -15,9 +16,14 @@
 		55FC418C1D59B51A0032EE67 /* UIWindow+SAPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC418B1D59B51A0032EE67 /* UIWindow+SAPExtensions.m */; };
 		55FC41921D59B5A20032EE67 /* SAPFlickrPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC41901D59B5A20032EE67 /* SAPFlickrPhotosViewController.m */; };
 		55FC41931D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FC41911D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib */; };
+		9D91E82E772480EFAB20952B /* libPods-Study training.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3776E2C5FA74F344C82DC442 /* libPods-Study training.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		310BEC4B50E6AF84A4004916 /* Pods-Study training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Study training/Pods-Study training.debug.xcconfig"; sourceTree = "<group>"; };
+		3776E2C5FA74F344C82DC442 /* libPods-Study training.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Study training.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5501BABB1D5E294C00AFBBE7 /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
+		5501BABC1D5E294C00AFBBE7 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
 		5539A4021D3183370003F1DA /* Study training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5539A4061D3183370003F1DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5539A4081D3183370003F1DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +37,7 @@
 		55FC418F1D59B5A20032EE67 /* SAPFlickrPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPFlickrPhotosViewController.h; sourceTree = "<group>"; };
 		55FC41901D59B5A20032EE67 /* SAPFlickrPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPFlickrPhotosViewController.m; sourceTree = "<group>"; };
 		55FC41911D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPFlickrPhotosViewController.xib; sourceTree = "<group>"; };
+		E2C40CB7FBBB0207EAF376F5 /* Pods-Study training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study training.release.xcconfig"; path = "Pods/Target Support Files/Pods-Study training/Pods-Study training.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,12 +45,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D91E82E772480EFAB20952B /* libPods-Study training.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24C7726E319098268385D286 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				310BEC4B50E6AF84A4004916 /* Pods-Study training.debug.xcconfig */,
+				E2C40CB7FBBB0207EAF376F5 /* Pods-Study training.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		41D47AB39B9DEB1410F55007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3776E2C5FA74F344C82DC442 /* libPods-Study training.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5539A3F91D3183370003F1DA = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +76,8 @@
 				55FC417B1D59B33E0032EE67 /* Resources */,
 				55FC417A1D59B26F0032EE67 /* Source */,
 				5539A4031D3183370003F1DA /* Products */,
+				24C7726E319098268385D286 /* Pods */,
+				41D47AB39B9DEB1410F55007 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +113,8 @@
 			children = (
 				55FC418D1D59B5A20032EE67 /* UI */,
 				55FC41871D59B51A0032EE67 /* Library */,
+				5501BABB1D5E294C00AFBBE7 /* Flickr.h */,
+				5501BABC1D5E294C00AFBBE7 /* Flickr.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -158,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5539A4191D3183370003F1DA /* Build configuration list for PBXNativeTarget "Study training" */;
 			buildPhases = (
+				7A7AEBFD80484478808E26F1 /* 📦 Check Pods Manifest.lock */,
 				5539A3FE1D3183370003F1DA /* Sources */,
 				5539A3FF1D3183370003F1DA /* Frameworks */,
 				5539A4001D3183370003F1DA /* Resources */,
+				CCA916C2F06F95709DEB0064 /* 📦 Embed Pods Frameworks */,
+				3D72CC448FBE2180C3E52F15 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +248,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D72CC448FBE2180C3E52F15 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Study training/Pods-Study training-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A7AEBFD80484478808E26F1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCA916C2F06F95709DEB0064 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Study training/Pods-Study training-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5539A3FE1D3183370003F1DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,6 +304,7 @@
 				55FC418C1D59B51A0032EE67 /* UIWindow+SAPExtensions.m in Sources */,
 				55A126891D5C5610007B3F6E /* FlickrSearcher.swift in Sources */,
 				55FC41921D59B5A20032EE67 /* SAPFlickrPhotosViewController.m in Sources */,
+				5501BABD1D5E294C00AFBBE7 /* Flickr.m in Sources */,
 				5539A40A1D3183370003F1DA /* AppDelegate.m in Sources */,
 				5539A4071D3183370003F1DA /* main.m in Sources */,
 			);
@@ -327,6 +408,7 @@
 		};
 		5539A41A1D3183370003F1DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310BEC4B50E6AF84A4004916 /* Pods-Study training.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Study training/Info.plist";
@@ -338,6 +420,7 @@
 		};
 		5539A41B1D3183370003F1DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C40CB7FBBB0207EAF376F5 /* Pods-Study training.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Study training/Info.plist";

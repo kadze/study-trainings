@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "SAPCollectionViewController.h"
+#import "SAPFlickrPhotosViewController.h"
 
 #import "UIWindow+SAPExtensions.h"
 
@@ -26,7 +26,7 @@
     self.themeColor = themeColor;
     window.tintColor = themeColor;
     
-    SAPCollectionViewController *controller = [SAPCollectionViewController new];
+    SAPFlickrPhotosViewController *controller = [SAPFlickrPhotosViewController new];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
 
     window.rootViewController = navigationController;
