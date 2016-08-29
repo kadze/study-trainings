@@ -12,7 +12,7 @@
 #import "AFImageDownloader.h"
 
 static bool classVarsInitialzed = NO;
-static NSString* apiKey = @"15e3b17a8e07f39f1c982361108a5153";
+static NSString* apiKey = @"8c3a786f3e4b9f23ba9f4b2c06fce51e";
 static AFHTTPSessionManager* afHttpSessionManager;
 static AFImageDownloader* afImageDownloader;
 

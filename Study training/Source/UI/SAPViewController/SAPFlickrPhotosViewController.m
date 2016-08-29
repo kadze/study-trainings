@@ -18,8 +18,10 @@ static NSString * const kSAPReuseIdentifier = @"FlickrCell";
 @interface SAPFlickrPhotosViewController () <
 UICollectionViewDataSource,
 UICollectionViewDelegate,
-UITextFieldDelegate>
+UITextFieldDelegate,
+UISearchBarDelegate>
 
+@property (nonatomic, strong) UISearchBar *searchBar;
 @property (nonatomic, assign) UIEdgeInsets sectionInsets;
 @property (nonatomic, strong) NSMutableArray<FlickrSearchResults *> *searches;
 @property (nonatomic, strong) Flickr *flickr;
@@ -32,6 +34,7 @@ UITextFieldDelegate>
 #pragma mark View Lifecycle
 
 - (void)viewDidLoad {
+    [self initializeSearchBar];
     self.sectionInsets = UIEdgeInsetsMake(50, 20, 50, 20);
     self.searches = [NSMutableArray new];
 }
@@ -40,8 +43,11 @@ UITextFieldDelegate>
 #pragma mark UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    
-    return 0;
+    return self.searches[section].searchResults.count;
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return self.searches.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -51,14 +57,14 @@ UITextFieldDelegate>
 }
 
 #pragma mark -
-#pragma mark UITextFieldDelegate
+#pragma mark UISearchBarDelegate
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    [textField addSubview:activityIndicator];
-    activityIndicator.frame = textField.bounds;
+    [searchBar addSubview:activityIndicator];
+    activityIndicator.frame = searchBar.bounds;
     [activityIndicator startAnimating];
-    [Flickr searchForTerm:textField.text onSuccess:^(FlickrSearchResults *searchResults, NSError *error) {
+    [Flickr searchForTerm:searchBar.text onSuccess:^(FlickrSearchResults *searchResults, NSError *error) {
         [activityIndicator removeFromSuperview];
         if (error) {
             NSLog(@"%@", error);
@@ -70,10 +76,8 @@ UITextFieldDelegate>
         [self.collectionView reloadData];
     }];
     
-    textField.text = nil;
-    [textField resignFirstResponder];
-    
-    return YES;
+    searchBar.text = nil;
+    [searchBar resignFirstResponder];
 }
 
 #pragma mark -
@@ -81,6 +85,17 @@ UITextFieldDelegate>
 
 - (FlickrPhoto *)photoForIndexPath:(NSIndexPath *)indexPath {
     return self.searches[indexPath.section].searchResults[indexPath.row];
+}
+
+- (void)initializeSearchBar {
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    self.searchBar = searchBar;
+    searchBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    UIView *searchBarView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 100.0, 44.0)];
+    searchBarView.autoresizingMask = 0;
+    searchBar.delegate = self;
+    [searchBarView addSubview:searchBar];
+    self.navigationItem.titleView = searchBarView;
 }
 
 @end
