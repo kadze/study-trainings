@@ -12,6 +12,7 @@
 
 #import "SAPModelView.h"
 
-@interface SAPFlickrPhotoCell : SAPCollectionViewCell //<SAPModelView>
+@interface SAPFlickrPhotoCell : SAPCollectionViewCell <SAPModelView>
+@property (nonatomic, strong) IBOutlet UIImageView *cellImageView;
 
 @end

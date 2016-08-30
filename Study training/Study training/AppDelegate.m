@@ -26,7 +26,7 @@
     self.themeColor = themeColor;
     window.tintColor = themeColor;
     
-    SAPFlickrPhotosViewController *controller = [[SAPFlickrPhotosViewController alloc] initWithCollectionViewLayout:[UICollectionViewLayout new]];
+    SAPFlickrPhotosViewController *controller = [[SAPFlickrPhotosViewController alloc] initWithCollectionViewLayout:[UICollectionViewFlowLayout new]];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
 
     window.rootViewController = navigationController;

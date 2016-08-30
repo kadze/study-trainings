@@ -8,23 +8,17 @@
 
 #import "SAPFlickrPhotosViewController.h"
 
-#import "Flickr.h"
 #import "SAPFlickrPhotoCell.h"
+#import "SAPSupplementaryView.h"
 
 #import "UICollectionView+SAPExtensions.h"
-
-static NSString * const kSAPReuseIdentifier = @"FlickrCell";
+#import "UINib+SAPExtensions.h"
 
 @interface SAPFlickrPhotosViewController () <
 UICollectionViewDataSource,
-UICollectionViewDelegate,
-UITextFieldDelegate,
-UISearchBarDelegate>
+UICollectionViewDelegate>
 
-@property (nonatomic, strong) UISearchBar *searchBar;
 @property (nonatomic, assign) UIEdgeInsets sectionInsets;
-@property (nonatomic, strong) NSMutableArray<FlickrSearchResults *> *searches;
-@property (nonatomic, strong) Flickr *flickr;
 
 @end
 
@@ -34,68 +28,67 @@ UISearchBarDelegate>
 #pragma mark View Lifecycle
 
 - (void)viewDidLoad {
-    [self initializeSearchBar];
-    self.sectionInsets = UIEdgeInsetsMake(50, 20, 50, 20);
-    self.searches = [NSMutableArray new];
+//    self.sectionInsets = UIEdgeInsetsMake(50, 20, 50, 20);
+    Class cellClass = [SAPFlickrPhotoCell class];
+    UINib *nib = [UINib nibWithClass:cellClass];
+    [self.collectionView registerNib:nib forCellWithReuseIdentifier:NSStringFromClass(cellClass)];
+    
+    Class supplementaryViewClass = [SAPSupplementaryView class];
+    UINib *supplementaryViewNib = [UINib nibWithClass:supplementaryViewClass];
+    NSString *supplementaryViewClassName = NSStringFromClass(supplementaryViewClass);
+    [self.collectionView registerNib:supplementaryViewNib
+          forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                 withReuseIdentifier:supplementaryViewClassName];
+    
+    UICollectionViewFlowLayout *flowLayout = self.collectionView.collectionViewLayout;
+    flowLayout.itemSize = CGSizeMake(40, 40);
+    flowLayout.headerReferenceSize = CGSizeMake(self.collectionView.bounds.size.width, 60);
 }
 
 #pragma mark -
 #pragma mark UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.searches[section].searchResults.count;
+    return 30;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return self.searches.count;
+    return 3;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SAPFlickrPhotoCell *cell = [collectionView cellWithClass:[SAPFlickrPhotoCell class] forIndexPath:indexPath];
+    cell.model = [self photoForIndexPath:indexPath];
     
     return cell;
 }
 
-#pragma mark -
-#pragma mark UISearchBarDelegate
-
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-    UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    [searchBar addSubview:activityIndicator];
-    activityIndicator.frame = searchBar.bounds;
-    [activityIndicator startAnimating];
-    [Flickr searchForTerm:searchBar.text onSuccess:^(FlickrSearchResults *searchResults, NSError *error) {
-        [activityIndicator removeFromSuperview];
-        if (error) {
-            NSLog(@"%@", error);
-            return;
-        }
-        
-        NSLog(@"Found %ld results for %@", (u_long)searchResults.searchResults.count, searchResults.searchTerm);
-        [self.searches insertObject:searchResults atIndex:0];
-        [self.collectionView reloadData];
-    }];
+//the flowLayout headerReferenceSize shouldn't be 0 to make this method be called
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
+           viewForSupplementaryElementOfKind:(NSString *)kind
+                                 atIndexPath:(NSIndexPath *)indexPath
+{
+    SAPSupplementaryView *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                                                                    withReuseIdentifier:[self supplementaryViewClassName]
+                                                                           forIndexPath:indexPath];
     
-    searchBar.text = nil;
-    [searchBar resignFirstResponder];
+    return view;
 }
+
 
 #pragma mark -
 #pragma mark Private
 
-- (FlickrPhoto *)photoForIndexPath:(NSIndexPath *)indexPath {
-    return self.searches[indexPath.section].searchResults[indexPath.row];
+- (UIImage *)photoForIndexPath:(NSIndexPath *)indexPath {
+    return [UIImage imageNamed:@"image4Cell"];
 }
 
-- (void)initializeSearchBar {
-    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
-    self.searchBar = searchBar;
-    searchBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    UIView *searchBarView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 100.0, 44.0)];
-    searchBarView.autoresizingMask = 0;
-    searchBar.delegate = self;
-    [searchBarView addSubview:searchBar];
-    self.navigationItem.titleView = searchBarView;
+- (Class)supplementaryViewClass {
+    return [SAPSupplementaryView class];
+}
+
+- (NSString *)supplementaryViewClassName {
+    return NSStringFromClass([self supplementaryViewClass]);
 }
 
 @end

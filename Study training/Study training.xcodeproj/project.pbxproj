@@ -21,6 +21,8 @@
 		55FC418C1D59B51A0032EE67 /* UIWindow+SAPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC418B1D59B51A0032EE67 /* UIWindow+SAPExtensions.m */; };
 		55FC41921D59B5A20032EE67 /* SAPFlickrPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FC41901D59B5A20032EE67 /* SAPFlickrPhotosViewController.m */; };
 		55FC41931D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FC41911D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib */; };
+		5E940EC51D76101400777AA6 /* SAPSupplementaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E940EC31D76101400777AA6 /* SAPSupplementaryView.m */; };
+		5E940EC61D76101400777AA6 /* SAPSupplementaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E940EC41D76101400777AA6 /* SAPSupplementaryView.xib */; };
 		9D91E82E772480EFAB20952B /* libPods-Study training.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3776E2C5FA74F344C82DC442 /* libPods-Study training.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,9 @@
 		55FC418F1D59B5A20032EE67 /* SAPFlickrPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPFlickrPhotosViewController.h; sourceTree = "<group>"; };
 		55FC41901D59B5A20032EE67 /* SAPFlickrPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPFlickrPhotosViewController.m; sourceTree = "<group>"; };
 		55FC41911D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPFlickrPhotosViewController.xib; sourceTree = "<group>"; };
+		5E940EC21D76101400777AA6 /* SAPSupplementaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAPSupplementaryView.h; path = SAPSupplementaryView/SAPSupplementaryView.h; sourceTree = "<group>"; };
+		5E940EC31D76101400777AA6 /* SAPSupplementaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAPSupplementaryView.m; path = SAPSupplementaryView/SAPSupplementaryView.m; sourceTree = "<group>"; };
+		5E940EC41D76101400777AA6 /* SAPSupplementaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SAPSupplementaryView.xib; path = SAPSupplementaryView/SAPSupplementaryView.xib; sourceTree = "<group>"; };
 		E2C40CB7FBBB0207EAF376F5 /* Pods-Study training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study training.release.xcconfig"; path = "Pods/Target Support Files/Pods-Study training/Pods-Study training.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,8 +264,19 @@
 				55FC41901D59B5A20032EE67 /* SAPFlickrPhotosViewController.m */,
 				55FC41911D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib */,
 				55516DC61D61831D004C74DF /* SAPFlickrPhotoCell */,
+				5E940EC11D760FCA00777AA6 /* SAPSupplementaryView */,
 			);
 			path = SAPViewController;
+			sourceTree = "<group>";
+		};
+		5E940EC11D760FCA00777AA6 /* SAPSupplementaryView */ = {
+			isa = PBXGroup;
+			children = (
+				5E940EC21D76101400777AA6 /* SAPSupplementaryView.h */,
+				5E940EC31D76101400777AA6 /* SAPSupplementaryView.m */,
+				5E940EC41D76101400777AA6 /* SAPSupplementaryView.xib */,
+			);
+			name = SAPSupplementaryView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +341,7 @@
 			files = (
 				550020E51D619859004A3FAC /* SAPFlickrPhotoCell.xib in Resources */,
 				55FC41811D59B3BF0032EE67 /* LaunchScreen.storyboard in Resources */,
+				5E940EC61D76101400777AA6 /* SAPSupplementaryView.xib in Resources */,
 				55FC41801D59B3BF0032EE67 /* Assets.xcassets in Resources */,
 				55FC41931D59B5A20032EE67 /* SAPFlickrPhotosViewController.xib in Resources */,
 			);
@@ -388,6 +405,7 @@
 				55FC418C1D59B51A0032EE67 /* UIWindow+SAPExtensions.m in Sources */,
 				55FC41921D59B5A20032EE67 /* SAPFlickrPhotosViewController.m in Sources */,
 				55516DC91D61834F004C74DF /* SAPFlickrPhotoCell.m in Sources */,
+				5E940EC51D76101400777AA6 /* SAPSupplementaryView.m in Sources */,
 				550020EB1D619B09004A3FAC /* SAPCollectionViewCell.m in Sources */,
 				5501BABD1D5E294C00AFBBE7 /* Flickr.m in Sources */,
 				5539A40A1D3183370003F1DA /* AppDelegate.m in Sources */,
