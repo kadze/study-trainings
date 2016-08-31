@@ -13,6 +13,13 @@
 		5539A4151D3183370003F1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5539A4131D3183370003F1DA /* LaunchScreen.storyboard */; };
 		5539A41F1D3187570003F1DA /* SAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5539A41D1D3187570003F1DA /* SAPViewController.m */; };
 		5539A4201D3187570003F1DA /* SAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5539A41E1D3187570003F1DA /* SAPViewController.xib */; };
+		5EBF06B11D770C3800531548 /* SAPViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF06B01D770C3800531548 /* SAPViewA.m */; };
+		5EBF06B41D770C4800531548 /* SAPViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF06B31D770C4800531548 /* SAPViewB.m */; };
+		5EBF06B71D770C6A00531548 /* SAPViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF06B61D770C6A00531548 /* SAPViewC.m */; };
+		5EBF06BA1D770C7E00531548 /* SAPViewD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF06B91D770C7E00531548 /* SAPViewD.m */; };
+		5EBF06BD1D770C8800531548 /* SAPViewE.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF06BC1D770C8800531548 /* SAPViewE.m */; };
+		5EBF06C01D77130F00531548 /* SAPViewF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF06BF1D77130F00531548 /* SAPViewF.m */; };
+		5EBF06C31D7713D700531548 /* SAPViewG.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF06C21D7713D700531548 /* SAPViewG.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,20 @@
 		5539A41C1D3187570003F1DA /* SAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewController.h; sourceTree = "<group>"; };
 		5539A41D1D3187570003F1DA /* SAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewController.m; sourceTree = "<group>"; };
 		5539A41E1D3187570003F1DA /* SAPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPViewController.xib; sourceTree = "<group>"; };
+		5EBF06AF1D770C3800531548 /* SAPViewA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewA.h; sourceTree = "<group>"; };
+		5EBF06B01D770C3800531548 /* SAPViewA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewA.m; sourceTree = "<group>"; };
+		5EBF06B21D770C4800531548 /* SAPViewB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewB.h; sourceTree = "<group>"; };
+		5EBF06B31D770C4800531548 /* SAPViewB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewB.m; sourceTree = "<group>"; };
+		5EBF06B51D770C6A00531548 /* SAPViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewC.h; sourceTree = "<group>"; };
+		5EBF06B61D770C6A00531548 /* SAPViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewC.m; sourceTree = "<group>"; };
+		5EBF06B81D770C7E00531548 /* SAPViewD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewD.h; sourceTree = "<group>"; };
+		5EBF06B91D770C7E00531548 /* SAPViewD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewD.m; sourceTree = "<group>"; };
+		5EBF06BB1D770C8800531548 /* SAPViewE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewE.h; sourceTree = "<group>"; };
+		5EBF06BC1D770C8800531548 /* SAPViewE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewE.m; sourceTree = "<group>"; };
+		5EBF06BE1D77130F00531548 /* SAPViewF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewF.h; sourceTree = "<group>"; };
+		5EBF06BF1D77130F00531548 /* SAPViewF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewF.m; sourceTree = "<group>"; };
+		5EBF06C11D7713D700531548 /* SAPViewG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewG.h; sourceTree = "<group>"; };
+		5EBF06C21D7713D700531548 /* SAPViewG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewG.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +88,7 @@
 				5539A41C1D3187570003F1DA /* SAPViewController.h */,
 				5539A41D1D3187570003F1DA /* SAPViewController.m */,
 				5539A41E1D3187570003F1DA /* SAPViewController.xib */,
+				5EBF06AE1D770C0B00531548 /* Views */,
 			);
 			path = "Study training";
 			sourceTree = "<group>";
@@ -77,6 +99,27 @@
 				5539A4061D3183370003F1DA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EBF06AE1D770C0B00531548 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EBF06AF1D770C3800531548 /* SAPViewA.h */,
+				5EBF06B01D770C3800531548 /* SAPViewA.m */,
+				5EBF06B21D770C4800531548 /* SAPViewB.h */,
+				5EBF06B31D770C4800531548 /* SAPViewB.m */,
+				5EBF06B51D770C6A00531548 /* SAPViewC.h */,
+				5EBF06B61D770C6A00531548 /* SAPViewC.m */,
+				5EBF06B81D770C7E00531548 /* SAPViewD.h */,
+				5EBF06B91D770C7E00531548 /* SAPViewD.m */,
+				5EBF06BB1D770C8800531548 /* SAPViewE.h */,
+				5EBF06BC1D770C8800531548 /* SAPViewE.m */,
+				5EBF06BE1D77130F00531548 /* SAPViewF.h */,
+				5EBF06BF1D77130F00531548 /* SAPViewF.m */,
+				5EBF06C11D7713D700531548 /* SAPViewG.h */,
+				5EBF06C21D7713D700531548 /* SAPViewG.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +193,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5539A40A1D3183370003F1DA /* AppDelegate.m in Sources */,
+				5EBF06BD1D770C8800531548 /* SAPViewE.m in Sources */,
+				5EBF06B11D770C3800531548 /* SAPViewA.m in Sources */,
+				5EBF06C31D7713D700531548 /* SAPViewG.m in Sources */,
+				5EBF06BA1D770C7E00531548 /* SAPViewD.m in Sources */,
 				5539A41F1D3187570003F1DA /* SAPViewController.m in Sources */,
+				5EBF06B71D770C6A00531548 /* SAPViewC.m in Sources */,
+				5EBF06C01D77130F00531548 /* SAPViewF.m in Sources */,
+				5EBF06B41D770C4800531548 /* SAPViewB.m in Sources */,
 				5539A4071D3183370003F1DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +342,7 @@
 				5539A41B1D3183370003F1DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
