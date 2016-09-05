@@ -34,24 +34,29 @@
 //}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesBegan:touches withEvent:event];
-    NSLog(@"began");
+//    [super touchesBegan:touches withEvent:event];
+//    NSLog(@"began");
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesMoved:touches withEvent:event];
-    NSLog(@"moved");
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView:self];
+    CGPoint previousLocation = [touch previousLocationInView:self];
+    CGRect frame = self.frame;
+    frame.origin.x = (frame.origin.x) + (location.x - previousLocation.x);
+    frame.origin.y = (frame.origin.y) + (location.y - previousLocation.y);
+    self.frame = frame;
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesEnded:touches withEvent:event];
-//    NSLog(@"touchesEnded in %@  with event %@", NSStringFromClass([self class]), event);
-    NSLog(@"ended");
+//    [super touchesEnded:touches withEvent:event];
+////    NSLog(@"touchesEnded in %@  with event %@", NSStringFromClass([self class]), event);
+//    NSLog(@"ended");
 }
 
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesCancelled:touches withEvent:event];
-    NSLog(@"cancelled");
+//    [super touchesCancelled:touches withEvent:event];
+//    NSLog(@"cancelled");
 }
 
 @end
