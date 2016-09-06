@@ -9,6 +9,13 @@
 #import "SAPViewC.h"
 
 @implementation SAPViewC
+//
+//- (instancetype)initWithFrame:(CGRect)frame {
+//    self = [super initWithFrame:(CGRect)frame];
+//    self.exclusiveTouch = YES;
+//    
+//    return self;
+//}
 
 #pragma mark -
 #pragma mark Public
@@ -33,6 +40,10 @@
 //    
 //    return result;
 //    
+//}
+
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    NSLog(@"began in C");
 //}
 
 @end
