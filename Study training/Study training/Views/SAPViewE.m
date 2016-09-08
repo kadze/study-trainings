@@ -34,7 +34,7 @@
 //}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    [super touchesBegan:touches withEvent:event];
+
 //    NSLog(@"began");
 }
 
@@ -49,13 +49,13 @@
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    [super touchesEnded:touches withEvent:event];
+
 ////    NSLog(@"touchesEnded in %@  with event %@", NSStringFromClass([self class]), event);
 //    NSLog(@"ended");
 }
 
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    [super touchesCancelled:touches withEvent:event];
+
 //    NSLog(@"cancelled");
 }
 
